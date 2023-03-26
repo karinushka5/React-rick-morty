@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/React-rick-morty/static/css/main.85598392.css",
+    "main.js": "/React-rick-morty/static/js/main.d044d737.js",
+    "static/js/787.a74095cd.chunk.js": "/React-rick-morty/static/js/787.a74095cd.chunk.js",
+    "static/media/Spinner-1s-450px.gif": "/React-rick-morty/static/media/Spinner-1s-450px.8ae149b7abe1a4756f10.gif",
+    "index.html": "/React-rick-morty/index.html",
+    "main.85598392.css.map": "/React-rick-morty/static/css/main.85598392.css.map",
+    "main.d044d737.js.map": "/React-rick-morty/static/js/main.d044d737.js.map",
+    "787.a74095cd.chunk.js.map": "/React-rick-morty/static/js/787.a74095cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85598392.css",
+    "static/js/main.d044d737.js"
+  ]
+}
