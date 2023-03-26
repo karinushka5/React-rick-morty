@@ -1,0 +1,43 @@
+$radius:10px;
+.images {
+  max-width: 250px;
+  box-shadow: 0 5px 20px 1px grey;
+  border-radius: $radius $radius;
+}
+.card {
+  border-radius: $radius;
+}
+
+.content {
+  padding: 10px;
+}
+
+
+.content-text {
+  padding: 10px;
+}
+.wrapper_character {
+    padding: 40px;
+    background-color: #fdffa4;
+    margin: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: #fdffa4;
+    position: relative;
+    min-height: 400px;
+}
+.images_character {
+  border-radius: $radius $radius 0 0;
+}
+.exit {
+  width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-weight: 900;
+    color: #000;
+}
