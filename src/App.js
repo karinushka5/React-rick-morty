@@ -17,12 +17,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}
         ></Route>
-        <Route path="/:id" element={<CardCharacter />} />
+        <Route path="/:id/" element={<CardCharacter />} />
       </Routes>
     </Router>
   )
 }
-let arrayCards=[];
 const Home = () => {
   let [pageNumber, setPageNumber] = useState(1);
   let [fetchedData, updateFetchedData ] = useState([]);
@@ -111,21 +110,21 @@ const scrollHadler = (e) => {
   
     <div className="App bg">
       <div className="container">
-      {showButton && (
-         <button onClick={scrollToTop} className="back-to-top">
-         <div className='arrow_top'>&#8679;</div>
-       </button>
-      )}
+     
       
             <div className="row">
             
-            {isLoading ?<div className='spinner'></div>:<Cards page="/" results={results} isLoading/>}
+            {isLoading ?<div className='spinner'></div>:<Cards page="/" results={results}/>}
             
             </div>
             
           </div>
           <Pagination pageNumber={pageNumber} setPageNumber={setPageNumber} info = {info}/>
-          
+          {showButton && (
+         <button onClick={scrollToTop} className="back-to-top">
+         <div className='arrow_top'>&#8679;</div>
+       </button>
+      )}
     </div>
   );}
   

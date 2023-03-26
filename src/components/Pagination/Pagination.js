@@ -9,7 +9,7 @@ const Pagination = ({pageNumber, setPageNumber, info}) => {
     setPageNumber(target.selected +1)
   }}
   pageCount={info?.pages}
-  className="pagination justify-content-center gap-4 my-4" 
+  className="pagination justify-content-center my-4" 
   nextLabel="Next" previousLabel="Prev" 
   nextClassName='btn btn-primary '
   previousClassName='btn btn-primary '

@@ -41,3 +41,14 @@ $radius:10px;
     font-weight: 900;
     color: #000;
 }
+@media only all and (max-width: 500px) {
+  
+ 
+  .images_character {
+    max-width: 200px;
+  }
+  .d-flex {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
