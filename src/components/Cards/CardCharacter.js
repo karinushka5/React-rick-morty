@@ -8,15 +8,21 @@ const CardCharacter = () => {
 
   let [fetchedData, updateFetchedData] = useState([]);
   let { name, location, origin, gender, image, status, species } = fetchedData;
+  console.log('fetch',fetchedData)
 console.log(name, location, origin, gender, image, status, species)
   let api = `https://rickandmortyapi.com/api/character/${id}`;
 console.log(origin)
   useEffect(() => {
-    (async function () {
-      let data = await fetch(api).then((res) => res.json());
-      updateFetchedData(data);
-    })();
+    setTimeout(()=>{
+      (async function() {
+        let data = await fetch(api)
+        .then(response => response.json());
+        updateFetchedData(data);
+        
+      })()
+    },1000)
   }, [api]);
+  if (fetchedData) {
 
   return (
     <div className="wrapper_character">
@@ -25,7 +31,7 @@ console.log(origin)
      
 
         <img className="img-fluid images_character" src={image} alt="" />
-        <Link to="/" className="navbar-brand text-center my-4" >
+        <Link to="/" >
          <div className="exit">X</div>
         </Link>
         <div className="content d-flex ">
@@ -65,7 +71,10 @@ console.log(origin)
     </div>
     </div>
     
-  );
+  );}
+  else {
+    <div>'Error'</div>
+  }
 };
 
 export default CardCharacter;

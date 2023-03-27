@@ -9,19 +9,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar'
 import CardCharacter from './components/Cards/CardCharacter'
 
-function App() {
-  return(
-    <Router>
-      <div className='App'></div>
-      <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home />}
-        ></Route>
-        <Route path="/:id/" element={<CardCharacter />} />
-      </Routes>
-    </Router>
-  )
-}
+
 const Home = () => {
   let [pageNumber, setPageNumber] = useState(1);
   let [fetchedData, updateFetchedData ] = useState([]);
@@ -128,6 +116,18 @@ const scrollHadler = (e) => {
     </div>
   );}
   
-  
+  function App() {
+    return(
+      <Router>
+        <div className='App'></div>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home />}
+          ></Route>
+          <Route path=":id" element={<CardCharacter />} />
+        </Routes>
+      </Router>
+    )
+  }
 
 export default App;

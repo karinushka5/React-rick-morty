@@ -6,7 +6,7 @@ const Cards = ({page, results}) => {
   console.log(results)
   let display;
   if (results) {
-    console.log('yes')
+    console.log('card', results)
     display = results.map((card) => {
       let {id, name, image } = card;
       return (

@@ -2,7 +2,7 @@
   "name": "myfirstapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://karinushka5.github.io/React-rick-morty",
+  "homepage": "https://karinushka5.github.io/",
   "dependencies": {
     "@popperjs/core": "^2.11.7",
     "@testing-library/jest-dom": "^5.16.5",
